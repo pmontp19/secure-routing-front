@@ -1,0 +1,8 @@
+#card{
+    height: 230px;
+    width: 250px;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

@@ -6,7 +6,6 @@ import 'leaflet/dist/leaflet.css';
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 
-// [41.390205, 2.154007] initial
 class MapComponent extends Component {
   state = {
     lat: 41.390205,
@@ -27,11 +26,11 @@ class MapComponent extends Component {
         <TileLayer url="https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}{r}.png" />
         {this.road.map((point, index) => <Marker key={index} icon={this.defaultIcon} position={point} />)}
         <RoutingMachine
-          color="yellow"
+          color="#3d00e0"
           map={this.map}
           road={this.road}
         />
-        <ZoomControl position={'topright'}/>
+        {/*<ZoomControl position={'topright'}/>*/}
       </Map>
     )
   }
