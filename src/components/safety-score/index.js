@@ -19,8 +19,8 @@ class SafetyScore extends React.Component {
         },
         plotOptions: {
           radialBar: {
-            startAngle: -135,
-            endAngle: 225,
+            startAngle: -180,
+            endAngle: 180,
             hollow: {
               margin: 0,
               size: '65%',
@@ -56,7 +56,7 @@ class SafetyScore extends React.Component {
               },
               value: {
                 formatter: function (val) {
-                  return (parseInt(val / 20) + '/5');
+                  return (parseInt(val / 25) + '/5');
                 },
                 color: '#111',
                 fontSize: '36px',
@@ -66,46 +66,29 @@ class SafetyScore extends React.Component {
           }
         },
         fill: {
-          colors: '#9C27B0'
+          colors: this.colorPicker(19)
         },
         stroke: {
           lineCap: 'round'
         },
         labels: ['Route Safety'],
       },
-      series: [62],
+      series: [19],
     }
   }
 
-  componentDidMount() {
+  colorPicker(data) {
     console.log('setting color')
-    if (this.state.series < 20) {
-      this.setState(({fill}) => ({fill: {
-          ...fill,
-          colors: '#b00005',
-        }}))
-    } else if (this.state.series > 20 && this.state.series < 40) {
-      this.setState(({fill}) => ({fill: {
-          ...fill,
-          colors: '#e7e800',
-        }}))
-    } else if (this.state.series > 40 && this.state.series < 60) {
-      this.setState(({fill}) => ({fill: {
-          ...fill,
-          colors: '#f78b00',
-        }}))
-    } else if (this.state.series > 60 && this.state.series < 80) {
-      this.setState(({fill}) => ({fill: {
-          ...fill,
-          colors: '#24b000',
-        }}))
-      console.log('setting color'+this.state.series)
-    } else if (this.state.series > 80 && this.state.series < 100) {
-      this.setState(({fill}) => ({fill: {
-          ...fill,
-          colors: '#2263b0',
-        }}))
-      console.log('setting color'+this.state.series)
+    if (data < 20) {
+      return '#b00005'
+    } else if (data > 20 && data < 40) {
+      return '#e7e800'
+    } else if (data > 40 && data < 60) {
+      return '#f78b00'
+    } else if (data > 60 && data < 80) {
+      return '#24b000'
+    } else if (data > 80 && data < 100) {
+      return '#2263b0'
     }
   }
 
