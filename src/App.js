@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import './App.css';
 import MapComponent from './Map'
 import SafetyScore from "./components/safety-score";
-import Client from './services'
 import axios from 'axios'
 const origin = [41.388829,2.113191]
 const destination = [41.441030,2.200062]

@@ -1,5 +1,3 @@
-'use strict'
-
 const axios = require('axios')
 
 // TODO to develop dotenv dep

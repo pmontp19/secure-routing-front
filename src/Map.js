@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Map, TileLayer, Marker, ZoomControl} from 'react-leaflet';
+import {Map, TileLayer, Marker} from 'react-leaflet';
 import RoutingMachine from './RoutingMachine';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -30,7 +30,6 @@ class MapComponent extends Component {
           map={this.map}
           road={this.road}
         />
-        {/*<ZoomControl position={'topright'}/>*/}
       </Map>
     )
   }

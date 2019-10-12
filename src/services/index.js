@@ -1,5 +1,3 @@
-'use strict'
-
 const Request = require('./ApiClient')
 const api = new Request('api/v1/directions')
 

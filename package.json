@@ -33,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/pmontp19/secure-routing-front/issues"
   },
-  "homepage": "https://github.com/pmontp19/secure-routing-front#readme",
+  "homepage": "http://3.248.188.133:5000/",
   "dependencies": {
     "@mapbox/polyline": "^1.1.0",
     "apexcharts": "^3.8.6",
