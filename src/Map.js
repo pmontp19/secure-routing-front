@@ -12,7 +12,7 @@ class MapComponent extends Component {
     lng: 2.154007,
     zoom: 12,
   }
-  road = [L.latLng(41.388829,2.113191), L.latLng(41.441030,2.200062)]
+  road = [L.latLng(this.props.origin[0],this.props.origin[1]), L.latLng(this.props.destination[0],this.props.destination[1])]
   map = React.createRef();
   defaultIcon = L.icon({
     iconUrl: icon,
@@ -35,4 +35,5 @@ class MapComponent extends Component {
     )
   }
 }
+
 export default MapComponent;

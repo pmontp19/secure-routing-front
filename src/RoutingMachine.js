@@ -8,7 +8,7 @@ class RoutingMachine extends MapLayer {
   createLeafletElement() {
     const { color, map, road } = this.props;
     let leafletElement = L.Routing.control({
-      serviceUrl: "//xx.xx.xx.xx:5000/route/v1",
+      serviceUrl: "//34.248.178.101:5000/route/v1",
       waypoints: road,
       lineOptions: {
         styles: [{
@@ -19,14 +19,14 @@ class RoutingMachine extends MapLayer {
       },
       addWaypoints: false,
       draggableWaypoints: false,
-      fitSelectedRoutes: false,
-      showAlternatives: false,
-      altLineOptions: { styles: [{opacity: 0}] },
+      fitSelectedRoutes: true,
+      showAlternatives: true,
+      altLineOptions: { styles: [{opacity: 1, color:"#b794f6"}] },
       createMarker: () => { return null; }
     })
       .addTo(map.current.leafletElement);
 
-    leafletElement.hide(); // hide road describtion
+    leafletElement.hide(); // hide road description
 
     return leafletElement.getPlan();
   }
