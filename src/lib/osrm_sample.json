@@ -1,0 +1,106 @@
+{
+  "code": "Ok",
+  "routes": [
+    {
+      "geometry": "_z||jAsxgdG??",
+      "legs": [
+        {
+          "steps": [
+            {
+              "intersections": [
+                {
+                  "out": 0,
+                  "entry": [
+                    true
+                  ],
+                  "bearings": [
+                    65
+                  ],
+                  "location": [
+                    4.28073,
+                    39.812016
+                  ]
+                }
+              ],
+              "driving_side": "right",
+              "geometry": "_z||jAsxgdG??",
+              "mode": "driving",
+              "duration": 0,
+              "maneuver": {
+                "bearing_after": 65,
+                "location": [
+                  4.28073,
+                  39.812016
+                ],
+                "bearing_before": 0,
+                "type": "depart"
+              },
+              "weight": 0,
+              "distance": 0,
+              "name": "Carrer Pas de l'Aire"
+            },
+            {
+              "intersections": [
+                {
+                  "in": 0,
+                  "entry": [
+                    true
+                  ],
+                  "bearings": [
+                    245
+                  ],
+                  "location": [
+                    4.28073,
+                    39.812016
+                  ]
+                }
+              ],
+              "driving_side": "right",
+              "geometry": "_z||jAsxgdG",
+              "mode": "driving",
+              "duration": 0,
+              "maneuver": {
+                "bearing_after": 0,
+                "location": [
+                  4.28073,
+                  39.812016
+                ],
+                "bearing_before": 65,
+                "type": "arrive"
+              },
+              "weight": 0,
+              "distance": 0,
+              "name": "Carrer Pas de l'Aire"
+            }
+          ],
+          "distance": 0,
+          "duration": 0,
+          "summary": "Carrer Pas de l'Aire",
+          "weight": 0
+        }
+      ],
+      "distance": 0,
+      "duration": 0,
+      "weight_name": "routability",
+      "weight": 0
+    }
+  ],
+  "waypoints": [
+    {
+      "distance": 5684217.404321,
+      "name": "Carrer Pas de l'Aire",
+      "location": [
+        4.28073,
+        39.812016
+      ]
+    },
+    {
+      "distance": 5678501.234651,
+      "name": "Carrer Pas de l'Aire",
+      "location": [
+        4.28073,
+        39.812016
+      ]
+    }
+  ]
+}
