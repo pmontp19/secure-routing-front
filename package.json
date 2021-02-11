@@ -36,7 +36,7 @@
   "homepage": "http://3.248.188.133:5000/",
   "dependencies": {
     "@mapbox/polyline": "^1.1.0",
-    "apexcharts": "^3.8.6",
+    "apexcharts": "^3.24.0",
     "axios": "^0.21.1",
     "leaflet": "^1.5.1",
     "leaflet-routing-machine": "^3.2.12",
